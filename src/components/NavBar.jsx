@@ -7,13 +7,17 @@ const NavBar = () => {
     useEffect(() => {
         const handleScrolled = () => {
             const isScrolled = window.scrollY > 10;
-            setScrolled(true);
-        }
+            setScrolled(isScrolled);
+        };
 
         window.addEventListener('scroll', handleScrolled);
 
+        // Call handler initially to set state on mount
+        handleScrolled();
+
         return () => window.removeEventListener('scroll', handleScrolled);
-    }, [])
+    }, []);
+
 
     return (
         <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
