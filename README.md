@@ -17,7 +17,7 @@
 
 - React
 - Vite
-- Three.js / react-three-fiber (if used)
-- CSS / Tailwind / SCSS (whichever you're using)
+- Three.js / react-three-fiber 
+- CSS / Tailwind 
 
 
